@@ -6,24 +6,21 @@
 /*   By: mapter <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 01:29:42 by mapter            #+#    #+#             */
-/*   Updated: 2022/10/27 02:06:57 by mapter           ###   ########.fr       */
+/*   Updated: 2022/10/28 15:36:15 by mapter           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_rev_int_tab(int *tab, int size)
 {
 	int	i;
-	int	ri;
 	int	swap;
 
 	i = 0;
-	ri = size - 1;
 	while (i < (size / 2))
 	{
 		swap = tab[i];
-		tab[i] = tab[ri];
-		tab[ri] = swap;
+		tab[i] = tab[size - i - 1];
+		tab[size - i - 1] = swap;
 		i++;
-		ri--;
 	}
 }

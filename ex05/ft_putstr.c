@@ -6,7 +6,7 @@
 /*   By: mapter <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 22:45:36 by mapter            #+#    #+#             */
-/*   Updated: 2022/10/27 01:12:01 by mapter           ###   ########.fr       */
+/*   Updated: 2022/10/30 12:32:08 by mapter           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -21,7 +21,7 @@ void	ft_putstr(char *str)
 	int	i;
 
 	i = 0;
-	while (str[i])
+	while (str[i] != '\0')
 	{
 		ft_putchar(str[i]);
 		i++;
